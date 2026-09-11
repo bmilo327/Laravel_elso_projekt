@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-#[Fillable(['title', 'description', 'end_date', 'status', 'user_id', 'project_id'])]
+#[Fillable(['name', 'costs', 'time', 'manager_id'])]
 
-class Task extends Model
+class Project extends Model
 {
-    /** @use HasFactory<\Database\Factories\TaskFactory> */
+    /** @use HasFactory<\Database\Factories\ProjectFactory> */
     use HasFactory;
 }

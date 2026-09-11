@@ -30,11 +30,12 @@ return new class extends Migration
             'password' => Hash::make('password')
         ]);
 
-                User::create([
+        User::create([
             'name' => 'Test_User',
             'email' => 'test@example.com',
             'password' => Hash::make('testpassword')
         ]);
+
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
             $table->string('email')->primary();
